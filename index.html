@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithms Ödev 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Almendra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body onload="defaultOpen()">
+    <div class="process">
+      <div class="tab"> 
+        <button class="tablinks" onclick="openTab(event, 'lin')" id="defaultOpen">Linked List</button>
+        <button class="tablinks" onclick="openTab(event, 'rec')">Linear Recursive Search</button>
+      </div>
+
+      <div id="lin" class="tabcontent">
+        <label for="">Bagli listeye ekle : </label>
+        <input type="text" class="input" id="addNodeInput">
+        <button type="button" class="button" id="addNodeButton" name="button">ekle</button>
+        <div class="fullList">
+          listede eleman bulunmamaktadır
+        </div>
+      </div>
+
+      <div id="rec" class="tabcontent">
+        <label for="">Bağlı listede ara : </label>
+        <input type="text" class="input" id="searchNodeInput">
+        <button type="button" class="button" id="searchNodeButton" name="button">ara</button>
+        <div class="fullListResult">
+
+        </div>
+      </div>
+
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Linked list sınıfımız-->
+    <script src="js/linkedList.js"></script>
+    <!-- Kullanıcı işlemlerimiz -->
+    <script src="js/events.js"></script>
+  </body>
+</html>
